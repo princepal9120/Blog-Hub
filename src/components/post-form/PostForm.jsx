@@ -122,7 +122,7 @@ function PostForm({ post }) {
                     {...register("status", { required: true })}
                 />
                 {loading? 
-                    <div className='w-full grid place-items-center'> <Loader></Loader></div>
+                 <Loader/>
                     :
                 <Button type="submit" bgColor={post ? "bg-green-500" : undefined} className= {` ${post? "  hover:shadow-green-500 " : " hover:shadow-[#5ce1e6] cyan-button"} text-black shadow-sm hover:cursor-pointer duration-200 hover:drop-shadow-2xl rounded-lg w-full`} >
                     {post ? "Update" : "Submit"}
